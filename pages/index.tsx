@@ -5,7 +5,7 @@ import dynamic from "next/dynamic";
 const Layout = dynamic(() => import("components/common/layout"));
 
 const Main: React.FC = () => {
-  return <Layout>메인테스트</Layout>;
+  return <Layout>메인</Layout>;
 };
 
 export default Main;
