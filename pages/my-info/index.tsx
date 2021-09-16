@@ -3,7 +3,7 @@ import styled from "styled-components";
 import dynamic from "next/dynamic";
 import Head from "next/head";
 
-const Layout = dynamic(() => import("components/common/Layout"));
+const Layout = dynamic(() => import("components/common/layout"));
 
 const Main: React.FC = () => {
   return (

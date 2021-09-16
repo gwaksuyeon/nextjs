@@ -2,9 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import dynamic from "next/dynamic";
 
-const Header = dynamic(() => import("components/common/Header"));
-const Footer = dynamic(() => import("components/common/Footer"));
-const Navigation = dynamic(() => import("components/common/Navigation"));
+const Header = dynamic(() => import("components/common/header"));
+const Footer = dynamic(() => import("components/common/footer"));
+const Navigation = dynamic(() => import("components/common/navigation"));
 
 const Layout: React.FC = ({ children }) => {
   return (
