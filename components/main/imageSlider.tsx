@@ -6,12 +6,16 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const ImageSlider: React.FC = () => {
+  const setting = {
+    arrows: false,
+  };
   return (
-    <Slider>
+    <Slider {...setting}>
       {new Array(5).fill(0).map((obj: any, inx: number) => (
         <ImageWrapper key={`image-${inx}`}>
           <Image
-            src={require(`public/images/image${inx + 1}.jpg`)}
+            layout={"fill"}
+            src={`/images/image${inx + 1}.jpg`}
             alt={`image${inx + 1}`}
             objectFit={"cover"}
           />
