@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import Image from "next/image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -20,12 +19,7 @@ const ImageSlider: React.FC = () => {
     <Slider {...setting}>
       {Data.map((obj: any, inx: number) => (
         <ImageWrapper key={`image-${inx}`}>
-          <Image
-            layout={"fill"}
-            src={obj}
-            alt={`image${inx + 1}`}
-            objectFit={"cover"}
-          />
+          <img src={obj} alt={`image${inx + 1}`} />
         </ImageWrapper>
       ))}
     </Slider>
@@ -37,13 +31,11 @@ const ImageWrapper = styled.div`
   position: relative;
   padding-bottom: 80%;
 
-  > div {
+  > img {
     position: absolute !important;
+    width: 100%;
     height: 100%;
-
-    > div {
-      height: 100%;
-    }
+    object-fit: cover;
   }
 `;
 
