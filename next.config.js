@@ -3,6 +3,6 @@ module.exports = {
   reactStrictMode: true,
   trailingSlash: true,
   images: {
-    domains: ["i.esdrop.com"],
+    domains: [process.NEXT_PUBLIC_IMAGE_URL],
   },
 };
