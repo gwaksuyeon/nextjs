@@ -25,6 +25,7 @@ const Wrapper = styled.div`
 `;
 
 const Main = styled.div`
+  height: 100%;
   flex: 1 1 auto;
 `;
 
